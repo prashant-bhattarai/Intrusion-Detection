@@ -1,0 +1,182 @@
+{
+	"abstract" : true,
+	"backtrace" : 19,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_add_library",
+			"add_library",
+			"include",
+			"_find_package",
+			"find_package",
+			"__find_dependency_common",
+			"find_dependency",
+			"set_target_properties"
+		],
+		"files" : 
+		[
+			"C:/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"C:/vcpkg/installed/x64-windows/share/absl/abslTargets.cmake",
+			"C:/vcpkg/installed/x64-windows/share/absl/abslConfig.cmake",
+			"C:/vcpkg/installed/x64-windows/share/protobuf/protobuf-config.cmake",
+			"C:/vcpkg/installed/x64-windows/share/protobuf/vcpkg-cmake-wrapper.cmake",
+			"E:/System_Installers/share/cmake-4.4/Modules/CMakeFindDependencyMacro.cmake",
+			"C:/vcpkg/installed/x64-windows/share/opencv4/OpenCVModules.cmake",
+			"C:/vcpkg/installed/x64-windows/share/opencv4/OpenCVConfig.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 8
+			},
+			{
+				"command" : 4,
+				"file" : 8,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 910,
+				"parent" : 1
+			},
+			{
+				"file" : 7,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 7,
+				"line" : 128,
+				"parent" : 3
+			},
+			{
+				"file" : 6,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 19,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 125,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 5,
+				"line" : 93,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 864,
+				"parent" : 8
+			},
+			{
+				"file" : 4,
+				"parent" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 3,
+				"parent" : 10
+			},
+			{
+				"file" : 3,
+				"parent" : 11
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 7,
+				"parent" : 12
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 910,
+				"parent" : 13
+			},
+			{
+				"file" : 2,
+				"parent" : 14
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 32,
+				"parent" : 15
+			},
+			{
+				"file" : 1,
+				"parent" : 16
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1029,
+				"parent" : 17
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 655,
+				"parent" : 18
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 1031,
+				"parent" : 17
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 11
+	},
+	"id" : "absl::log_internal_nullguard::@6890427a1f51a3e7e1df",
+	"imported" : true,
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 20,
+			"id" : "absl::abseil_dll::@6890427a1f51a3e7e1df"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 20,
+			"id" : "absl::abseil_dll::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 20,
+			"fragment" : "-ignore:4221"
+		},
+		{
+			"backtrace" : 20,
+			"fragment" : "-ignore:4221"
+		}
+	],
+	"local" : true,
+	"name" : "absl::log_internal_nullguard",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}

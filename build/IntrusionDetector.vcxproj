@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9723ECA1-4D5E-3706-80FC-2E8944CCF4F0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>IntrusionDetector</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Software_Projects\CV_02_Workspace_Intrusion\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">IntrusionDetector.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">IntrusionDetector</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Software_Projects\CV_02_Workspace_Intrusion\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">IntrusionDetector.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">IntrusionDetector</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Software_Projects\CV_02_Workspace_Intrusion\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">IntrusionDetector.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">IntrusionDetector</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Software_Projects\CV_02_Workspace_Intrusion\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">IntrusionDetector.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">IntrusionDetector</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include/opencv4"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary E:/Software_Projects/CV_02_Workspace_Intrusion/build/Debug/IntrusionDetector.exe -installedDir C:/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\vcpkg\installed\x64-windows\debug\lib\opencv_highgui4d.lib;C:\vcpkg\installed\x64-windows\debug\lib\opencv_ml4d.lib;C:\vcpkg\installed\x64-windows\debug\lib\opencv_objdetect4d.lib;C:\vcpkg\installed\x64-windows\debug\lib\opencv_photo4d.lib;C:\vcpkg\installed\x64-windows\debug\lib\opencv_stitching4d.lib;C:\vcpkg\installed\x64-windows\debug\lib\opencv_video4d.lib;C:\vcpkg\installed\x64-windows\debug\lib\opencv_videoio4d.lib;C:\vcpkg\installed\x64-windows\debug\lib\opencv_imgcodecs4d.lib;C:\vcpkg\installed\x64-windows\debug\lib\opencv_calib3d4d.lib;C:\vcpkg\installed\x64-windows\debug\lib\opencv_dnn4d.lib;C:\vcpkg\installed\x64-windows\debug\lib\opencv_features2d4d.lib;C:\vcpkg\installed\x64-windows\debug\lib\opencv_flann4d.lib;C:\vcpkg\installed\x64-windows\debug\lib\opencv_imgproc4d.lib;C:\vcpkg\installed\x64-windows\debug\lib\opencv_core4d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>E:/Software_Projects/CV_02_Workspace_Intrusion/build/Debug/IntrusionDetector.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>E:/Software_Projects/CV_02_Workspace_Intrusion/build/Debug/IntrusionDetector.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include/opencv4"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary E:/Software_Projects/CV_02_Workspace_Intrusion/build/Release/IntrusionDetector.exe -installedDir C:/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\vcpkg\installed\x64-windows\lib\opencv_highgui4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_ml4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_objdetect4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_photo4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_stitching4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_video4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_videoio4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_imgcodecs4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_calib3d4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_dnn4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_features2d4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_flann4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_imgproc4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_core4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>E:/Software_Projects/CV_02_Workspace_Intrusion/build/Release/IntrusionDetector.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>E:/Software_Projects/CV_02_Workspace_Intrusion/build/Release/IntrusionDetector.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include/opencv4"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary E:/Software_Projects/CV_02_Workspace_Intrusion/build/MinSizeRel/IntrusionDetector.exe -installedDir C:/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\vcpkg\installed\x64-windows\lib\opencv_highgui4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_ml4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_objdetect4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_photo4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_stitching4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_video4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_videoio4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_imgcodecs4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_calib3d4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_dnn4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_features2d4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_flann4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_imgproc4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_core4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>E:/Software_Projects/CV_02_Workspace_Intrusion/build/MinSizeRel/IntrusionDetector.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>E:/Software_Projects/CV_02_Workspace_Intrusion/build/MinSizeRel/IntrusionDetector.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include/opencv4"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\vcpkg\installed\x64-windows\include\opencv4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary E:/Software_Projects/CV_02_Workspace_Intrusion/build/RelWithDebInfo/IntrusionDetector.exe -installedDir C:/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\vcpkg\installed\x64-windows\lib\opencv_highgui4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_ml4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_objdetect4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_photo4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_stitching4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_video4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_videoio4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_imgcodecs4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_calib3d4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_dnn4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_features2d4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_flann4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_imgproc4.lib;C:\vcpkg\installed\x64-windows\lib\opencv_core4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>E:/Software_Projects/CV_02_Workspace_Intrusion/build/RelWithDebInfo/IntrusionDetector.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>E:/Software_Projects/CV_02_Workspace_Intrusion/build/RelWithDebInfo/IntrusionDetector.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Software_Projects\CV_02_Workspace_Intrusion\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Software_Projects/CV_02_Workspace_Intrusion/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\System_Installers\bin\cmake.exe -SE:/Software_Projects/CV_02_Workspace_Intrusion -BE:/Software_Projects/CV_02_Workspace_Intrusion/build --check-stamp-file E:/Software_Projects/CV_02_Workspace_Intrusion/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\BuildFlatBuffers.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-debug.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config-version.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig-version.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-debug.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-release.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;C:\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;C:\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;C:\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeCCompiler.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeCXXCompiler.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeRCCompiler.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeSystem.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCCompiler.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeCCompilerABI.c;E:\System_Installers\share\cmake-4.4\Modules\CMakeCInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCXXCompiler.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeCXXCompilerABI.cpp;E:\System_Installers\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDependentOption.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCXXCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompilerABI.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompilerSupport.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineRCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineSystem.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeFindDependencyMacro.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeParseImplicitLinkInfo.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeParseLibraryArchitecture.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeRCCompiler.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeRCInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeSystem.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestCXXCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestCompilerCommon.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestRCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CheckCSourceCompiles.cmake;E:\System_Installers\share\cmake-4.4\Modules\CheckIncludeFile.cmake;E:\System_Installers\share\cmake-4.4\Modules\CheckLibraryExists.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Diab-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\PellesC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Renesas-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\TI-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\TIClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CompilerId\VS-10.vcxproj.in;E:\System_Installers\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;E:\System_Installers\share\cmake-4.4\Modules\FindPackageMessage.cmake;E:\System_Installers\share\cmake-4.4\Modules\FindTIFF.cmake;E:\System_Installers\share\cmake-4.4\Modules\FindThreads.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeDetermineLinkerId.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeInspectCLinker.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeInspectCXXLinker.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CheckSourceCompiles.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\FeatureTesting.cmake;E:\System_Installers\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Linker\MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-Determine-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;E:\System_Installers\share\cmake-4.4\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Software_Projects/CV_02_Workspace_Intrusion/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\System_Installers\bin\cmake.exe -SE:/Software_Projects/CV_02_Workspace_Intrusion -BE:/Software_Projects/CV_02_Workspace_Intrusion/build --check-stamp-file E:/Software_Projects/CV_02_Workspace_Intrusion/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\BuildFlatBuffers.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-debug.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config-version.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig-version.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-debug.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-release.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;C:\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;C:\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;C:\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeCCompiler.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeCXXCompiler.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeRCCompiler.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeSystem.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCCompiler.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeCCompilerABI.c;E:\System_Installers\share\cmake-4.4\Modules\CMakeCInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCXXCompiler.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeCXXCompilerABI.cpp;E:\System_Installers\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDependentOption.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCXXCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompilerABI.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompilerSupport.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineRCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineSystem.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeFindDependencyMacro.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeParseImplicitLinkInfo.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeParseLibraryArchitecture.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeRCCompiler.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeRCInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeSystem.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestCXXCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestCompilerCommon.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestRCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CheckCSourceCompiles.cmake;E:\System_Installers\share\cmake-4.4\Modules\CheckIncludeFile.cmake;E:\System_Installers\share\cmake-4.4\Modules\CheckLibraryExists.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Diab-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\PellesC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Renesas-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\TI-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\TIClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CompilerId\VS-10.vcxproj.in;E:\System_Installers\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;E:\System_Installers\share\cmake-4.4\Modules\FindPackageMessage.cmake;E:\System_Installers\share\cmake-4.4\Modules\FindTIFF.cmake;E:\System_Installers\share\cmake-4.4\Modules\FindThreads.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeDetermineLinkerId.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeInspectCLinker.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeInspectCXXLinker.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CheckSourceCompiles.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\FeatureTesting.cmake;E:\System_Installers\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Linker\MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-Determine-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;E:\System_Installers\share\cmake-4.4\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Software_Projects/CV_02_Workspace_Intrusion/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\System_Installers\bin\cmake.exe -SE:/Software_Projects/CV_02_Workspace_Intrusion -BE:/Software_Projects/CV_02_Workspace_Intrusion/build --check-stamp-file E:/Software_Projects/CV_02_Workspace_Intrusion/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\BuildFlatBuffers.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-debug.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config-version.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig-version.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-debug.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-release.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;C:\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;C:\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;C:\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeCCompiler.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeCXXCompiler.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeRCCompiler.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeSystem.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCCompiler.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeCCompilerABI.c;E:\System_Installers\share\cmake-4.4\Modules\CMakeCInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCXXCompiler.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeCXXCompilerABI.cpp;E:\System_Installers\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDependentOption.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCXXCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompilerABI.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompilerSupport.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineRCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineSystem.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeFindDependencyMacro.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeParseImplicitLinkInfo.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeParseLibraryArchitecture.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeRCCompiler.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeRCInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeSystem.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestCXXCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestCompilerCommon.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestRCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CheckCSourceCompiles.cmake;E:\System_Installers\share\cmake-4.4\Modules\CheckIncludeFile.cmake;E:\System_Installers\share\cmake-4.4\Modules\CheckLibraryExists.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Diab-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\PellesC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Renesas-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\TI-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\TIClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CompilerId\VS-10.vcxproj.in;E:\System_Installers\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;E:\System_Installers\share\cmake-4.4\Modules\FindPackageMessage.cmake;E:\System_Installers\share\cmake-4.4\Modules\FindTIFF.cmake;E:\System_Installers\share\cmake-4.4\Modules\FindThreads.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeDetermineLinkerId.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeInspectCLinker.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeInspectCXXLinker.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CheckSourceCompiles.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\FeatureTesting.cmake;E:\System_Installers\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Linker\MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-Determine-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;E:\System_Installers\share\cmake-4.4\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Software_Projects/CV_02_Workspace_Intrusion/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\System_Installers\bin\cmake.exe -SE:/Software_Projects/CV_02_Workspace_Intrusion -BE:/Software_Projects/CV_02_Workspace_Intrusion/build --check-stamp-file E:/Software_Projects/CV_02_Workspace_Intrusion/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\BuildFlatBuffers.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-debug.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatBuffersTargets.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets-release.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\FlatcTargets.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config-version.cmake;C:\vcpkg\installed\x64-windows\share\flatbuffers\flatbuffers-config.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig-version.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVConfig.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-debug.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules-release.cmake;C:\vcpkg\installed\x64-windows\share\opencv4\OpenCVModules.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;C:\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;C:\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;C:\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeCCompiler.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeCXXCompiler.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeRCCompiler.cmake;E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\4.4.0-rc2\CMakeSystem.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCCompiler.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeCCompilerABI.c;E:\System_Installers\share\cmake-4.4\Modules\CMakeCInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCXXCompiler.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeCXXCompilerABI.cpp;E:\System_Installers\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDependentOption.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCXXCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompilerABI.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineCompilerSupport.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineRCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeDetermineSystem.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeFindDependencyMacro.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeParseImplicitLinkInfo.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeParseLibraryArchitecture.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeRCCompiler.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeRCInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeSystem.cmake.in;E:\System_Installers\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestCXXCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestCompilerCommon.cmake;E:\System_Installers\share\cmake-4.4\Modules\CMakeTestRCCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CheckCSourceCompiles.cmake;E:\System_Installers\share\cmake-4.4\Modules\CheckIncludeFile.cmake;E:\System_Installers\share\cmake-4.4\Modules\CheckLibraryExists.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\CrayClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Diab-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\OrangeC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\PellesC-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Renesas-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\TI-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\TIClang-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Tasking-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;E:\System_Installers\share\cmake-4.4\Modules\CompilerId\VS-10.vcxproj.in;E:\System_Installers\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;E:\System_Installers\share\cmake-4.4\Modules\FindPackageMessage.cmake;E:\System_Installers\share\cmake-4.4\Modules\FindTIFF.cmake;E:\System_Installers\share\cmake-4.4\Modules\FindThreads.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeDetermineLinkerId.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeInspectCLinker.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CMakeInspectCXXLinker.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\CheckSourceCompiles.cmake;E:\System_Installers\share\cmake-4.4\Modules\Internal\FeatureTesting.cmake;E:\System_Installers\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Linker\MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-Determine-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\Windows.cmake;E:\System_Installers\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;E:\System_Installers\share\cmake-4.4\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Software_Projects\CV_02_Workspace_Intrusion\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\Software_Projects\CV_02_Workspace_Intrusion\src\intrusion_detector.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="E:\Software_Projects\CV_02_Workspace_Intrusion\build\ZERO_CHECK.vcxproj">
+      <Project>{B65551CF-7DDC-325C-AE0B-45A15AA68D98}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

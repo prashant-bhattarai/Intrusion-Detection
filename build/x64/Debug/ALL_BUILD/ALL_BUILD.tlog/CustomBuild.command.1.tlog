@@ -1,0 +1,10 @@
+^E:\SOFTWARE_PROJECTS\CV_02_WORKSPACE_INTRUSION\CMAKELISTS.TXT
+setlocal
+E:\System_Installers\bin\cmake.exe -SE:/Software_Projects/CV_02_Workspace_Intrusion -BE:/Software_Projects/CV_02_Workspace_Intrusion/build --check-stamp-file E:/Software_Projects/CV_02_Workspace_Intrusion/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
