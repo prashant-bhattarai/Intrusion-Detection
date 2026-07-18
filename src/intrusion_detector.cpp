@@ -39,7 +39,19 @@ int main() {
                 boundingBox.x += safeZone.x;
                 boundingBox.y += safeZone.y;
                 cv::rectangle(frame, boundingBox, cv::Scalar(0, 0, 255), 2);
+
+                cv::Moments m = cv::moments(contours[i]);
+                if ( m.m00 != 0)
+                {
+                    int cx= m.m10 / m.m00;
+                    int cy= m.m01 / m.m00;
+                    cx += safeZone.x;
+                    cy += safeZone.y;
+                    cv::circle(frame,{cx,cy}, 2 , cv::Scalar {0,255,0});
+                    cv::line(frame , {cx, cy-10}, {cx, cy+10}, cv::Scalar {0,255,0});
+                    cv::line(frame , {cx-10, cy}, {cx+10, cy}, cv::Scalar {0,255,0});
                 }
+            }
         }
 
         if (intrusionDetected) {
